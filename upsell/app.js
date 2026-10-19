@@ -16,5 +16,5 @@ document.querySelector('#accept').addEventListener('click', () => {
   const notice = document.querySelector('#checkout-notice'); notice.hidden = false; notice.setAttribute('role', 'status');
 });
 document.querySelector('#decline').addEventListener('click', () => {
-  const notice = document.querySelector('#declined'); notice.hidden = false; notice.setAttribute('role', 'status'); notice.scrollIntoView({block:'nearest'});
+  window.location.assign('/obrigado/');
 });
